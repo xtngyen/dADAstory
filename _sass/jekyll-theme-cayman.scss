@@ -106,8 +106,6 @@ a {
 }
 
 .page-header {
-  color: $header-heading-color;
-  text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/../data/banner.jpg");
 
   /* Set a specific height */
@@ -130,6 +128,14 @@ a {
   @include small {
     padding: 2rem 1rem;
   }
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .project-name {
