@@ -108,7 +108,16 @@ a {
 .page-header {
   color: $header-heading-color;
   text-align: center;
-  background-image: url('../data/banner.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../data/banner.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
   @include large {
     padding: 5rem 6rem;
